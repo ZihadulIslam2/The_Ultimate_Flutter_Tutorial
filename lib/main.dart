@@ -56,11 +56,25 @@ class _MyHomePageState extends State<MyHomePage> {
         // wrap with container
         // Right click on any weiget => refactor => wrap with container
         child: Container(
+          margin: EdgeInsets.all(50.0),
           height: double.infinity,
-          width: 100.0,
+          width: double.infinity,
           padding: EdgeInsets.all(50.0),
           decoration: BoxDecoration(color: Colors.red),
-          child: (Text("hello", style: TextStyle(color: Colors.green))),
+
+          // container
+          child: Container(
+            height: double.infinity,
+            width: double.infinity,
+            decoration: BoxDecoration(
+              color: const Color.fromARGB(201, 14, 189, 81),
+            ),
+
+            child: (Text(
+              "hello",
+              style: TextStyle(color: const Color.fromARGB(255, 0, 0, 244)),
+            )),
+          ),
         ),
       ),
       floatingActionButton: FloatingActionButton(
