@@ -52,30 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
-      body: Center(
-        // wrap with container
-        // Right click on any weiget => refactor => wrap with container
-        child: Container(
-          margin: EdgeInsets.all(50.0),
-          height: double.infinity,
-          width: double.infinity,
-          padding: EdgeInsets.all(50.0),
-          decoration: BoxDecoration(color: Colors.red),
-
-          // container
-          child: Container(
-            height: double.infinity,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              color: const Color.fromARGB(201, 14, 189, 81),
-            ),
-
-            child: (Text(
-              "hello",
-              style: TextStyle(color: const Color.fromARGB(255, 0, 0, 244)),
-            )),
-          ),
-        ),
+      body: Image.network(
+        "https://res.cloudinary.com/dat3kh4o6/image/upload/v1767304955/families/hfop0uqgae3vfut4epqe.png",
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
