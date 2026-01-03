@@ -54,6 +54,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Image.network(
         "https://res.cloudinary.com/dat3kh4o6/image/upload/v1767304955/families/hfop0uqgae3vfut4epqe.png",
+        height: double.infinity,
+        fit: BoxFit.fitHeight,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
